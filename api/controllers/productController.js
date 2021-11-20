@@ -18,7 +18,7 @@ const productController = {
 				? response.filters[0].values[0].path_from_root.map(category => category.name)
 				: [];
 				
-		const products = response.results.map(product => {
+		const items = response.results.map(product => {
 				const [amount, decimals] = product.price.toString().split(".");
 				return {
 					id: product.id,
@@ -37,7 +37,7 @@ const productController = {
 		const productsData = {
 			author,
 			categories,
-			products
+			items
 		}
 		return res.status(200).send(productsData)
 	}
