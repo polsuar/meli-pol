@@ -1,15 +1,15 @@
 import { configureStore } from "@reduxjs/toolkit";
 import logger from "redux-logger";
 
-import itemsReducer from "./items";
-import selectedItemReducer from "./selectedItem";
+import productsReducer from "./products";
+import selectedProductReducer from "./selectedProduct";
 
 
 const store = configureStore({
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
   reducer: {
-    items: itemsReducer,
-    selectedItem: selectedItemReducer
+    products: productsReducer,
+    selectedProduct: selectedProductReducer
   },
 });
 
