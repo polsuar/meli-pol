@@ -2,14 +2,14 @@ import { configureStore } from "@reduxjs/toolkit";
 import logger from "redux-logger";
 
 import productsReducer from "./products";
-import selectedProductReducer from "./selectedProduct";
+import singleProductReducer from "./singleProduct";
 
 
 const store = configureStore({
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
   reducer: {
     products: productsReducer,
-    selectedProduct: selectedProductReducer
+    singleProduct: singleProductReducer
   },
 });
 

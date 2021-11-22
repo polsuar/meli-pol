@@ -12,15 +12,10 @@ export default function App() {
 	return (
 		<>
 			<Navbar />
- 			<Routes>
-				<Route exact path="/" element={<Home />} />
-
-				<Route exact path="/items" element ={<Products />} />
-
-				<Route exact path="/items/:id"
-					render={({ match }) => <SingleProduct id={match.params.id} />}
-				/>
-
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="items" element={<Products />} />
+				<Route path="items/:id" element={<SingleProduct />} />
 			</Routes> 
 		</>
 	)
