@@ -1,5 +1,5 @@
 {
-  "name": "25-omdb",
+  "name": "meli-pol",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,14 +24,12 @@
     "start": "concurrently 'npm run server' 'npm run client'",
     "server": "nodemon api/server.js",
     "client": "react-scripts start",
-    "build": "react-scripts build",
-    "seed": "node api/seed"
+    "build": "react-scripts build"
   },
   "proxy": "http://localhost:3001",
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {
