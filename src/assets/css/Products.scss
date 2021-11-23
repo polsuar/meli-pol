@@ -1,0 +1,160 @@
+#root{
+	background-color: #EEEEEE;
+}
+.items-list-item {
+  height: 200px;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+
+  img {
+    width: 180px;
+    height: 180px;
+  }
+
+  &:not(:last-child) {
+    border-bottom: solid 1px #cccccc;
+  }
+}
+
+.product-data {
+  flex: 9;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-decoration: none;
+  color: initial;
+  font-size: 18px;
+}
+
+p {
+	font-size: 18px;
+	margin:0;
+}
+
+
+
+.product-price {
+  display: inline-block;
+  font-size: 24px;
+	margin: 0 ;
+	padding:16px 0 8px;
+	
+}
+
+.item-price-decimals {
+  font-size: 12px;
+  position: relative;
+  bottom: 7px;
+}
+
+.item-free-shipping {
+  position: relative;
+  font-style: italic;
+  color: #00a650;
+}
+
+
+.product-image{
+	width: 180px;
+	height: 180px;
+	border-radius: 4px;
+	padding: 16px;
+}
+
+
+.body{
+  width: 77vw;
+  padding: 0;
+  margin: auto;
+	padding-bottom: 200px;
+  list-style-type: none;
+}
+
+.container {
+	position: fixed;
+	left: 350px;
+	padding: 0;
+	margin: 0;
+	background-color: #ff00ff;
+}
+
+.detail-btn-buy{
+	width: 100%;
+	height: 44px;
+	margin: 32px 32px 0 0;
+	border: none;
+	border-radius: 4px;
+	background-color: #3483FA;
+	color: #fff;    
+	font-weight: 600;
+}
+
+.column {
+	float: left;
+}
+  
+
+.column.middle {
+	margin: 0; 
+	padding: 32px 0;
+	width: 60%;
+}
+
+
+.column.left {
+	width: 20%;
+}
+.column.right {
+	padding-top: 48px;
+	width: 20%;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+	height: auto;
+	width: max-content;
+}
+
+
+.description{
+	background-color: white;
+}
+
+hr { 
+	display: block; 
+	border: 0; 
+	border-top: 1px solid #eee;
+	margin: 0 16px; 
+	padding: 0; 
+}
+
+
+a {
+	color: #333333;
+	text-decoration: none;
+}
+
+a:hover 
+{
+	 color:#666666; 
+	 text-decoration:none; 
+	 cursor:pointer;  
+}
+
+
+.dot-green {
+	height: 16px;
+	width: 16px;
+	background: no-repeat url("../images/ic_shipping.png") 50% #EEEEEE;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 4px;
+	vertical-align: middle;
+	margin: 0 0 7px 10px;
+	}

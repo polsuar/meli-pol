@@ -1,0 +1,28 @@
+.breadcrumb {
+	display: inline-block;
+	list-style: none;
+	width: 60vw;
+	margin: 16px auto;
+	padding: 0;
+}
+
+.breadcrumb-item {
+	display: inline-block;
+  color: #aaaaaa;
+  font-size: 14px;
+  &:not(:last-child)::after {
+		display: inline-block;
+		margin-left:.5em ;
+    content: '\003E';
+    height: 16px;
+    width: 16px;
+  }
+}
+
+.breadcrumb-item:last-child {
+	font-weight:600;
+ }
+
+.breadcrumb-item:last-child::after {
+ content: '';
+}

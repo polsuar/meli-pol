@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from "react-redux";
-//import "./Breadcrumb.scss";
+import "../assets/css/Breadcrumb.scss";
 
 export function Breadcrumb() {
 	const categories = useSelector((state) => state.products.categories);

@@ -4,7 +4,6 @@ import Home from "../components/Home";
 import Navbar from "../components/Navbar";
 import Products from "../components/Products"
 import SingleProduct from "../components/SingleProduct"
-//import BreadCrumb from "../components/BreadCrumb"
 
 
 export default function App() {
