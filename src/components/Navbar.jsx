@@ -11,19 +11,23 @@ export default function NavBar() {
   let navigate = useNavigate();
 
   function searchQuery(event) {
-		
     event.preventDefault();
 		dispatch(getProducts(query));
     navigate(`/items?search=${query}`);
   }
 
+	function clearInput(){
+		document.getElementById("search-input").value=""
+	}
+
   return (
 		<header>
 			<form className="nav-form" role="search" onSubmit={searchQuery}>
-				<Link to="/">
+				<Link to="/" onClick={clearInput}>
 					<img className="nav-logo" src={logo} alt="Mercado Libre Argentina - Donde comprar y vender de todo" />
 				</Link> 
 				<input
+					id="search-input"
 					type="text"
 					className="nav-input"
 					placeholder="Nunca dejes de buscar"

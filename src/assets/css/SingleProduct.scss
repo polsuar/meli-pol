@@ -1,30 +1,40 @@
-
-.img-responsive {
-	width: 680px;
-}
-
-
 .column.left-70 {
 	margin: 0; 
 	padding-left: 32px ;
 	width: 67%;
 }
 
-
 .column.right-30 {
 	padding: 32px 32px 0 0;
 	width: 27%;
+	float:right;
 }
 
-.btn-buy{
-	border-color: transparent;
-	background-color: #3483FA;
-	color: #FFFFFF;
+.img-responsive {
+	max-width: 680px;
+	width:100%
+}
+
+.description-title {
+	font-size: 28px;
+	color: #333333;
+	margin: 0;
+}
+.description-text {
 	font-size: 16px;
-	font-weight: 600;
-	height: 48px;
-	border-radius: 4px;
-	width: 100%;
+	color: #333333;
+	padding: 32px 0;
+}
+
+.single-subtitle {
+  font-size: 14px;
+	color: #666666;
+	padding-bottom: 16px;
+}
+
+.single-title {
+  font-size: 24px;
+	color: #333333;
 }
 
 .single-price {
@@ -42,30 +52,7 @@
 	color: #333333
 }
 
-
-.single-subtitle {
-  font-size: 14px;
-	color: #666666;
-	padding-bottom: 16px;
-}
-.single-title {
-  font-size: 24px;
-	color: #333333;
-}
-
-
-.description-title {
-  font-size: 28px;
-	color: #333333;
-	margin: 0;
-}
-.description-text {
-  font-size: 16px;
-	color: #333333;
-	padding: 32px 0;
-}
-
-.single-dot-green {
+.single-free-shipping {
 	height: 32px;
 	width: 32px;
 	background: no-repeat url("../images/ic_shipping@2x.png") 50% #EEEEEE;
@@ -74,4 +61,15 @@
 	margin-right: 4px;
 	vertical-align: middle;
 	margin: 0 0 20px 10px;
-	}
+}
+
+.btn-buy{
+	border-color: transparent;
+	background-color: #3483FA;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: 600;
+	height: 48px;
+	border-radius: 4px;
+	width: 100%;
+}

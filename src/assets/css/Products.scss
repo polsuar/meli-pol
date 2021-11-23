@@ -1,91 +1,17 @@
-.product-data {
-  flex: 9;
-  margin-left: 10px;
-  display: flex;
-  flex-direction: column;
+body{
+	background-color: #EEEEEE;
 }
-
-.title {
-  text-decoration: none;
-  color: initial;
-  font-size: 18px;
-}
-
-p {
-	font-size: 18px;
-	margin:0;
-}
-
-
-
-.product-price {
-  display: inline-block;
-  font-size: 24px;
-	margin: 0 ;
-	padding:16px 0 8px;
-	
-}
-
-.item-price-decimals {
-  font-size: 12px;
-  position: relative;
-  bottom: 7px;
-}
-
-
-.product-image{
-	width: 180px;
-	height: 180px;
-	border-radius: 4px;
-	padding: 16px;
-}
-
 
 .body{
-  width: 77vw;
+  width: 80vw;
   padding: 0;
   margin: auto;
 	padding-bottom: 200px;
   list-style-type: none;
 }
 
-.container {
-	position: fixed;
-	left: 350px;
-	padding: 0;
-	margin: 0;
-	background-color: #ff00ff;
-}
-
-.detail-btn-buy{
-	width: 100%;
-	height: 44px;
-	margin: 32px 32px 0 0;
-	border: none;
-	border-radius: 4px;
-	background-color: #3483FA;
-	color: #fff;    
-	font-weight: 600;
-}
-
-.column {
-	float: left;
-}
-  
-
-.column.middle {
-	margin: 0; 
-	padding: 32px 0;
-	width: 60%;
-}
-
-
-.column.left {
-	width: 20%;
-}
-.column.right {
-	padding-top: 48px;
-	width: 20%;
+.container{
+	background-color: #FFFFFF;
 }
 
 .row:after {
@@ -96,19 +22,62 @@ p {
 	width: max-content;
 }
 
+.column {
+	float: left;
+}
 
-.description{
-	background-color: white;
+.column.middle {
+	margin: 0; 
+	padding: 32px 0;
+	width: 60%;
+}
+
+.column.left {
+	width: 20%;
+}
+
+.column.right {
+	padding-top: 58px;
+	width: 20%;
+}
+
+.product-image{
+	width: 180px;
+	height: 180px;
+	border-radius: 4px;
+	padding: 16px;
+}
+
+.product-price {
+  display: inline-block;
+  font-size: 24px;
+	margin: 0 ;
+	padding:16px 0 8px;
+	
+}
+
+.product-price-decimals {
+  font-size: 12px;
+  position: relative;
+  bottom: 7px;
+}
+
+.title {
+  font-size: 18px;
+}
+
+p {
+	font-size: 12px;
+	margin:0;
 }
 
 hr { 
 	display: block; 
 	border: 0; 
-	border-top: 1px solid #eee;
+	border-top: 1px solid #EEEEEE;
 	margin: 0 16px; 
 	padding: 0; 
 }
-
 
 a {
 	color: #333333;
@@ -117,13 +86,12 @@ a {
 
 a:hover 
 {
-	 color:#666666; 
-	 text-decoration:none; 
-	 cursor:pointer;  
+	color:#666666; 
+	text-decoration:none; 
+	cursor:pointer;  
 }
 
-
-.dot-green {
+.free-shipping {
 	height: 16px;
 	width: 16px;
 	background: no-repeat url("../images/ic_shipping.png") 50% #EEEEEE;
@@ -132,8 +100,4 @@ a:hover
 	margin-right: 4px;
 	vertical-align: middle;
 	margin: 0 0 7px 10px;
-	}
-
-	body{
-		background-color: #EEEEEE;
 	}

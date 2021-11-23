@@ -19,31 +19,38 @@ export default function Products() {
 		<>
 			<div className="body">
 				<Breadcrumb />
-					<div className="description" >
-						{products.items && products.items.map(item => (
-							<Link to={`/items/${item.id}`} key={item.id}>
-									<div className="row" >
-											<div className="column left" >
-													<img className="product-image"
-															src={item && item.picture} alt={item.title} />
-											</div>
-											<div className="column middle" >
-													<p>
-															<span className="product-price">{item && `$ ${item.price.amount}`}</span>{item.price.decimals && <span className="item-price-decimals" >{item.price.decimals}</span>}
-															{item.free_shipping && <span className="dot-green" />}
-													</p><br />
-													<p>
-															<span className="title">{item && `${item.title}`}</span>
-													</p>
-													<p>
-														<span className="title">{item.condition === 'new' ? "Nuevo" : "Usado"}</span>
-													</p>
-											</div>
-											<div className="column right" ><p>{products.author && `${products.author.name} ${products.author.lastname}`}</p></div>
-									</div>
-									<hr/>
-							</Link>
-						))}
+				<div className="container" >
+					{products.items && products.items.map(item => (
+						<Link to={`/items/${item.id}`} key={item.id}>
+							<div className="row" >
+								<div className="column left" >
+									<img
+										className="product-image"
+										src={item && item.picture}
+										alt={item.title}
+									/>
+								</div>
+								<div className="column middle" >
+									<p>
+										<span className="product-price">{item && `$ ${item.price.amount}`}</span>
+										{item.price.decimals && <span className="product-price-decimals" >{item.price.decimals}</span>}
+										{item.free_shipping && <span className="free-shipping" />}
+									</p>
+									<br/>
+									<p>
+										<span className="title">{item && `${item.title}`}</span>
+									</p>
+									<p>
+										<span className="title">{item.condition === 'new' ? "Nuevo" : "Usado"}</span>
+									</p>
+								</div>
+								<div className="column right" >
+									<p>{products.author && `${products.author.name} ${products.author.lastname}`}</p>
+								</div>
+							</div>
+							<hr/>
+						</Link>
+					))}
 				</div>
 			</div>
 		</>
