@@ -19,20 +19,20 @@ const productController = {
 				: [];
 				
 		const items = response.results.map(product => {
-				const [amount, decimals] = product.price.toString().split(".");
-				return {
-					id: product.id,
-					title: product.title,
-					price: {
-						currency: product.currency_id,
-						amount: parseInt(amount),
-						decimals: parseInt(decimals)
-					},
-					picture: product.thumbnail,
-					condition: product.condition,
-					free_shipping: product.shipping.free_shipping
-				};
-			})
+			const [amount, decimals] = product.price.toString().split(".");
+			return {
+				id: product.id,
+				title: product.title,
+				price: {
+					currency: product.currency_id,
+					amount: parseInt(amount),
+					decimals: parseInt(decimals)
+				},
+				picture: product.thumbnail,
+				condition: product.condition,
+				free_shipping: product.shipping.free_shipping
+			};
+		})
 
 		const productsData = {
 			author,
@@ -40,8 +40,7 @@ const productController = {
 			items
 		}
 		return res.status(200).send(productsData)
-	}
-,
+	},
 
 	getSingleProduct: async (req, res)=> {
 		let query = req.params.id;
@@ -75,7 +74,5 @@ const productController = {
 		return res.status(200).send(singleProductData)
 	}
 }
-
-
 
 module.exports = productController

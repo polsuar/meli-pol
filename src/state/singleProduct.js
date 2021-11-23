@@ -2,9 +2,8 @@ import { createReducer, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export const getSingleProduct = createAsyncThunk("GETSINGLEPRODUCT", (id) => {
-    return axios.get(`/api/products/${id}`).then((res) => res.data);
-  });
-
+  return axios.get(`/api/products/${id}`).then((res) => res.data);
+});
 
 const initialState = {};
 

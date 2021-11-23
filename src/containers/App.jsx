@@ -7,7 +7,6 @@ import SingleProduct from "../components/SingleProduct"
 
 
 export default function App() {
-
 	return (
 		<>
 			<Navbar />
