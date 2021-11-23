@@ -30,7 +30,7 @@ export default function SingleProduct() {
 								<p className="description-text">{singleProduct && singleProduct.item.description}</p>
 							</div>
 						</div>
-						<div className="column right-30 col col-4" >
+						<div className="column right-30" >
 							<div>
 								<p className="single-subtitle">
 									{singleProduct && `${singleProduct.item.condition === 'new' ? "Nuevo" : "Usado"} - ${singleProduct.item.sold_quantity} vendidos `}
